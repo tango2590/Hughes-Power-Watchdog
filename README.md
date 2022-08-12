@@ -1,5 +1,4 @@
 # Hughes Power Watchdog in HomeAssistant via ESPHome
-Information on integrating the Hughes Power Watchdog autoformer series into HomeAssistant using ESPHome.
 
 *This project is ongoing, so please check back for updates. We encourage you to submit an issue on this repository if you encounter any issues.*
 

@@ -6,6 +6,7 @@
 
 -   NodeMCU ESP32
 -   BLE Sniffer
+    <br><br />
 
 # Instructions
 
@@ -18,7 +19,8 @@ These instructions will assume that you have the latest version of HomeAssistant
 3.  While your ESP32 is installing and rebooting, ensure there are no devices connected to your Hughes, including your phone. The Hughes only allows a single device to connect at a time.
 
 4.  You should now notice new sensors available in HomeAssistant.
-
+    <br><br />
+    
 ### Sensors Available
 - Cumulative Power Usage
 - Line 1 Voltage (volts)
@@ -29,11 +31,13 @@ These instructions will assume that you have the latest version of HomeAssistant
 - Line 2 Voltage (volts)
 - Line 2 Current (amps)
 - Line 2 Power (watts)
+    <br><br />
 
 ### Future Updates
 - Addition of a sensor for Error reporting
 - Additional sensor that combines L1 and L2 power values to give you a total watts for the unit 
 - Support for resetting the cumulative kWh counter via HA
+    <br><br />
 
 ### Contributions
 Many thanks to everybody who helped with this project, regardless of the capacity. Without the help of each and every one of you, this project would not have been sucessful. Extra special thanks goes out to:

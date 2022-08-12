@@ -1,0 +1,63 @@
+esphome:
+  name: hughes-power-watchdog
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+  level: VERBOSE
+  logs:
+    esp32_ble_tracker: ERROR
+
+external_components:
+  - source:
+      type: git
+      url: https://github.com/spbrogan/esphome
+      ref: PolledSensor
+    components: [ hughes_power_watchdog ]
+    refresh: 1s
+
+
+# Enable Home Assistant API
+api:
+
+ota:
+  password: !secret ota_pasword
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+# Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "yourssid"
+    password: "yourpassword"
+
+captive_portal:
+
+esp32_ble_tracker:
+
+ble_client:
+  - mac_address: 0C:61:CF:32:4B:81
+    id: power_watchdog
+
+sensor:
+  - platform: hughes_power_watchdog
+    ble_client_id: power_watchdog
+    voltage_line_1:
+      name: "Watchdog Voltage Line 1"
+    current_line_1:
+      name: "Watchdog Current Line 1"
+    power_line_1:
+      name: "Watchdog Power Line 1"
+    voltage_line_2:
+      name: "Watchdog Voltage Line 2"
+    current_line_2:
+      name: "Watchdog Current Line 2"
+    power_line_2:
+      name: "Watchdog Power Line 2"
+    total_power:
+      name: "Watchdog Cumulative Power Usage"

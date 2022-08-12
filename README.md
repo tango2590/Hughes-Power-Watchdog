@@ -14,7 +14,7 @@ These instructions will assume that you have the latest version of HomeAssistant
 
 1.  Using a BLE sniffer, determine your device's MAC address. Look for a device named "PMD    ###########". There are plenty of BLE sniffer apps available for free. Make a note of your MAC address.
 
-2.  Add the ESP32 to your ESPHome. Copy the code found [here](code/hughes_esphome.yaml) to your ESP32 config. Change the "*mac_address:*" to your MAC address found in step 1. Save and install to your ESP32.
+2.  Add the ESP32 to your ESPHome. Copy the code found [here](hughes_esphome.yaml) to your ESP32 config. Change the "*mac_address:*" to your MAC address found in step 1. Save and install to your ESP32.
 
 3.  While your ESP32 is installing and rebooting, ensure there are no devices connected to your Hughes, including your phone. The Hughes only allows a single device to connect at a time.
 

@@ -5,5 +5,6 @@
   sensors:
     watchdog_total_watts:
       friendly_name: Watchdog Total Watts
-      value_template: -> {{ states('sensor.watchdog_power_line_1') | float + states('sensor.watchdog_power_line_2') | float }}
+      value_template: >-
+        {{ states('sensor.watchdog_power_line_1') | float + states('sensor.watchdog_power_line_2') | float }}
       unit_of_measurement: watts

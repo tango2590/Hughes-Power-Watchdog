@@ -31,6 +31,7 @@ These instructions will assume that you have the latest version of HomeAssistant
 - Line 2 Voltage (volts)
 - Line 2 Current (amps)
 - Line 2 Power (watts)
+- Total Watts Between Lines ([code for template sensor](total_watts_sensor.yaml))
     <br><br />
 
 ### Future Updates

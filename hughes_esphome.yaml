@@ -43,6 +43,11 @@ esp32_ble_tracker:
 ble_client:
   - mac_address: 0C:61:CF:32:4B:81
     id: power_watchdog
+    
+switch:
+  - platform: ble_client
+    ble_client_id: power_watchdog
+    name: "Watchdog Monitoring"
 
 sensor:
   - platform: hughes_power_watchdog
@@ -59,5 +64,12 @@ sensor:
       name: "Watchdog Current Line 2"
     power_line_2:
       name: "Watchdog Power Line 2"
+    combined_power:
+      name: "Watchdog Power"
     total_power:
       name: "Watchdog Cumulative Power Usage"
+    error_code_value:
+      name: "Watchdog Error Code"
+    error_code_text:
+      name: "Watchdog Error Text"
+   

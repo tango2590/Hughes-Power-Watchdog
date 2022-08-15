@@ -26,17 +26,17 @@ These instructions will assume that you have the latest version of HomeAssistant
 - Line 1 Voltage (volts)
 - Line 1 Current (amps)
 - Line 1 Power (watts)
+- Error Code Number
+- Error Code Description
 
 *Additional sensors only available on 50amp units:*
 - Line 2 Voltage (volts)
 - Line 2 Current (amps)
 - Line 2 Power (watts)
-- Total Watts Between Lines ([code for template sensor](total_watts_sensor.yaml))
+- Total Combined Power (L1 + L2) (watts)
     <br><br />
 
 ### Future Updates
-- Addition of a sensor for Error reporting
-- Additional sensor that combines L1 and L2 power values to give you a total watts for the unit 
 - Support for resetting the cumulative kWh counter via HA
     <br><br />
 

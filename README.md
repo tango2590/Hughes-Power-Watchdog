@@ -18,7 +18,7 @@ These instructions will assume that you have the latest version of HomeAssistant
 
 3.  While your ESP32 is installing and rebooting, ensure there are no devices connected to your Hughes, including your phone. The Hughes only allows a single device to connect at a time.
 
-4.  You should now notice new sensors available in HomeAssistant.
+4.  You should now notice new sensors available in HomeAssistant. Along with the new sensors, there is a switch built-in to the integration to allow you to stop monitoring via your ESP32 in case you want to connect a other device (such as the Hughes app).
     <br><br />
     
 ### Sensors Available

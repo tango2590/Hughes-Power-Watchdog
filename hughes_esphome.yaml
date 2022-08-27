@@ -54,20 +54,28 @@ sensor:
     ble_client_id: power_watchdog
     voltage_line_1:
       name: "Watchdog Voltage Line 1"
+      accuracy_decimals: 0
     current_line_1:
       name: "Watchdog Current Line 1"
+      accuracy_decimals: 1
     power_line_1:
       name: "Watchdog Power Line 1"
+      accuracy_decimals: 0
     voltage_line_2:
       name: "Watchdog Voltage Line 2"
+      accuracy_decimals: 0
     current_line_2:
       name: "Watchdog Current Line 2"
+      accuracy_decimals: 1
     power_line_2:
       name: "Watchdog Power Line 2"
+      accuracy_decimals: 0
     combined_power:
       name: "Watchdog Power"
+      accuracy_decimals: 0
     total_power:
       name: "Watchdog Cumulative Power Usage"
+      accuracy_decimals: 1
     error_code_value:
       name: "Watchdog Error Code"
     error_code_text:

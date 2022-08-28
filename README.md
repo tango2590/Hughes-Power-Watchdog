@@ -40,6 +40,12 @@ These instructions will assume that you have the latest version of HomeAssistant
 - Support for resetting the cumulative kWh counter via HA
     <br><br />
 
+### Troubleshooting
+Depending on the ESP device that you are using, you may run into installation problems when ESPHome attempts to install the code OTA. A common issue is "Error 104", which typically means the ESP device ran out of memory and cannot complete the installation. This is common after the first installation because the ESP is contiuously receiving data from the Hughes device, which can quickly use up memory while an installation is in progress.
+<br><br>
+An easy work around for this is to utilize the built-in switch. Before you install updated code, turn off the switch. This will disconnect the ESP from the Hughes. Once disconnected, open your mobile app and connect via the Hughes app to prevent the ESP from connecting during the installation process. Install the new code, then disconnect the app and turn the switch back on. The ESP should reconnect shortly after that.
+    <br><br />
+
 ### Contributions
 Many thanks to everybody who helped with this project, regardless of the capacity. Without the help of each and every one of you, this project would not have been sucessful. Extra special thanks goes out to:
 - [spbrogan](https://github.com/spbrogan)

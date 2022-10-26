@@ -81,3 +81,23 @@ sensor:
     error_code_text:
       name: "Watchdog Error Text"
    
+# Include sensors for troubleshooting
+text_sensor:
+  - platform: version
+    name: Watchdog ESPHome Version
+    id: watchdog_esphome_version
+  - platform: wifi_info
+    ip_address:
+      name: Watchdog Host IP Address
+      id: watchdog_host_ip
+      icon: mdi:fingerprint
+    ssid:
+      name: Watchdog Host SSID
+      id: watchdog_host_ssid
+      icon: "mdi:router-wireless"
+  - platform: template
+    id: watchdog_host_mac_address
+    name: Watchdog Monitor MAC Address
+    lambda: 'return {WiFi.macAddress().c_str()};'
+    icon: mdi:fingerprint
+    update_interval: 1d

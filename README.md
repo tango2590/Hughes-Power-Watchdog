@@ -2,9 +2,9 @@
 
 
 ### Materials Needed
--   Hughes Power Watchdog Surge Protector *(any PWD model w/ bluetooth)*
+-   Hughes Power Watchdog Surge Protector *(any PWD or PWS model w/ bluetooth)*
 -   NodeMCU ESP32
--   BLE Sniffer *(smartphone-based apps work as well)*
+-   BLE Sniffer/BLE Sniffing App/HomeAssistant BLE Integration
 -   HomeAssistant w/ ESPHome add-on
     <br><br />
 
@@ -12,7 +12,7 @@
 
 These instructions will assume that you have the latest version of HomeAssistant and the ESPHome add-on installed.
 
-1.  Using a BLE sniffer device or BLE sniffing smartphone app, determine your device's MAC address. There are plenty of BLE sniffer apps available for free for both Android and iOS. Start by looking for a device named "PMD    ###########". Make a note of your MAC address, as you will need this later.
+1.  Using a BLE sniffer device or BLE sniffing smartphone app (Android only), determine your Watchdog's MAC address. Start by looking for a device named "PMD    ###########". Some newer devices may show as "PWS" instead of "PMD". Make a note of your MAC address, as you will need this later.<br><br>It's important to note that Apple devices won't be useful in this step, since Apple purposly obfuscates MAC address data for security purposes. A workaround for this is to use the Bluetoothe LE Tracker integration inside of HomeAssistant if your device has a bluetooth receiver. Once enabled, navigate to your "known_devices.yaml" file, and you will find the PWD/PWS device along with it's associated MAC address.
 
 2.  Add the ESP32 to your ESPHome. Copy the code found [here](hughes_esphome.yaml) to your ESP32 config. Change the "*mac_address:*" to your MAC address found in step 1. Save and install to your ESP32.
 

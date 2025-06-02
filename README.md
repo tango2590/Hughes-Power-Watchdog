@@ -1,5 +1,6 @@
 # Hughes Power Watchdog in HomeAssistant via ESPHome
 
+*** *I am no longer able to maintain this project as of August 2023. I no longer own an RV or a Hughes device required to coninue work.* ***
 
 ### Materials Needed
 -   Hughes Power Watchdog Surge Protector *(any PWD or PWS model w/ bluetooth)*
